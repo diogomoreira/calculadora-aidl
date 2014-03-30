@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.acme.calculadora.cliente.CalculadoraActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <EditText
+        android:id="@+id/primeiroTermoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/primeiroNumero"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/segundoTermoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/segundoNumero"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/botaoSomar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="botaoSomarClickHandler"
+        android:text="@string/btSomar" />
+
+    <TextView
+        android:id="@+id/labelResultadoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/labelResultado" />
+
+    <TextView
+        android:id="@+id/resultadoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultadoSoma"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>
+
